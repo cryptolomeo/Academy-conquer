@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario de inscripción en academia Conquer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <header>
+    <!--Logotipo-->
+    <a href="index.html" >
+      <figure>
+        <img width="150" src="/img/common/Conquer-Blocks-logo.avif" alt="logotipo de la escuela online" 
+        loading="lazy">
+      </figure>
+    </a>
+
+    <!--Menu de navegación-->
+    <nav class="container-menu">
+      <ul>  
+        <li>Home</li>
+        <li><a href="quienessomos.html">Quienes somos</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li>Registro</li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>  
+    </nav>
+
+  </header>
+  
+  <main>
+    <h1>Formulario de inscripcion a la escuela Conquer</h1>
+    <p>Rellene cuidadosamente el formulario de inscripción para poder acceder a nuestra academia.</p>
+    
+    <form action="post" enctype="multipart/form-data">
+      <p><fieldset>
+        <legend>Nombre del alumno</legend>
+        <input type="text" name="name" id="name">
+        <label for="name">Nombre</label>
+        <input type="text" name="last-name" id="last-name">
+        <label for="last-name">Apellido</label>
+        <input type="text" name="second-last-name" id="second-last-name">
+        <label for="second-last-name">Segundo apellido</label>
+        <p><label for="photo">Subir fotografía</label>
+        <input type="file" name="photo" id="photo"></p>
+        <p><label for="bioa">Biografía</label><br>
+        <textarea name="bio" id="" cols="60" rows="5"></textarea></p>
+      </fieldset></p>
+
+
+
+      <p><fieldset>
+        <legend>Fecha de nacimiento</legend>
+        <input type="date" name="birth" id="birth" required>
+        <label for="birth">Fecha</label>
+      </fieldset></p>  
+
+      <p><fieldset>
+        <legend>Género</legend>
+        <label for="gender">Elige un género:</label>
+        <select name="gender" id="gender">
+          <option value="">-</option>
+          <option value="Varon">Masculino</option>
+          <option value="Mujer">Femenino</option>
+        </select>
+      </fieldset></p>
+
+      <p><fieldset>
+        <legend>Dirección</legend>
+        <input type="text" name="address" id="address">
+        <label for="address">Dirección de la calle</label>
+        <input type="text" name="city" id="city">
+        <label for="city">Ciudad</label>
+        <input type="text" name="state" id="state">
+        <label for="state">Estado</label>
+        <input type="text" name="post-code" id="post-code">
+        <label for="post-code">Código Postal</label>
+      </fieldset></p>
+
+      <p><fieldset>
+        <legend>Email</legend>
+        <input type="text" name="email" id="email">
+        <label for="email">ejemplo@ejemplo.com</label>          
+      </fieldset></p>
+
+      <p><fieldset>
+        <legend>Número de teléfono</legend>
+        <input type="tel" name="telphone" id="telphone">
+        <label for="email">Ingrese un numero de teléfono válido</label>          
+      </fieldset></p>
+
+      <p><input type="submit" value="Envío">
+      <input type="reset" value="Borrar formulario"></p>      
+
+    </form>
+
+
+  </main>
+
+  <footer>
+    <!--Texto típico de copyright y enlace al aviso legal.-->
+    <p>© Copyright Ivan Rodriguez 2025 - <a href="aviso-legal.html">Aviso Legal</a></p>
+
+    
+
+
+  </footer>
+
+</body>
+
+</html>
