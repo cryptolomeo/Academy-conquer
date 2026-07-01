@@ -2,21 +2,9 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-
-
-
-
 /// Regular font family
 /// @type List
-$text-font-stack: "Poppins", sans-serif !default;
-
-/// Code (monospace) font family
-/// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
-
-
-
-
+$text-font: "Poppins", sans-serif !default;
 
 /// Copy text color
 /// @type Color
@@ -24,7 +12,11 @@ $text-color: rgb(34, 34, 34) !default;
 
 /// Main brand color
 /// @type Color
-$brand-color: rgb(229, 0, 80) !default;
+$brand-primary: #F1FC5B !default;
+
+/// Main brand color
+/// @type Color
+$brand-secondary: #6DBAFF !default;
 
 /// Light grey
 /// @type Color
