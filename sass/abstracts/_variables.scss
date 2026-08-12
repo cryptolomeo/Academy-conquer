@@ -2,9 +2,17 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-/// Regular font family
+/// Primary font
 /// @type List
-$text-font: "Poppins", sans-serif !default;
+$font-primary: 'Inter', sans-serif !default;
+
+/// Secondary font
+/// @type List
+$font-secondary: 'Georgia', serif !default;
+
+/// Font mono
+/// @type List
+$font-mono: 'Courier New', monospace !default;
 
 /// Copy text color
 /// @type Color
