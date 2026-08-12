@@ -1,3 +1,27 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+@use "../abstracts/variables" as *;
+
+.header {
+    display: flex;
+    flex-direction:row;
+    position: relative;
+    
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 5px;
+        align-items: center;
+    }
+
+    &__logo {
+        align-self: center;
+
+        & img {
+            width: auto;
+            height: 25px;
+        }
+    }
+}
