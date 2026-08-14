@@ -52,6 +52,7 @@ h6 {
 
 // ========== PÁRRAFOS ==========
 p {
+    color: $text-color;
     margin-bottom: 1rem;
     
     &:last-child {
