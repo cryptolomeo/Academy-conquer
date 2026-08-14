@@ -61,11 +61,13 @@ p {
 
 // ========== ENLACES ==========
 a {
-    color: $brand-primary;
+    color: $brand-secondary;
+    font-weight: 500;
     text-decoration: none;
     transition: color 0.3s ease;
     
     &:hover {
+        color: $text-color;
         text-decoration: underline;
     }
 }
