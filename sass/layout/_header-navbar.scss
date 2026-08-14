@@ -24,7 +24,6 @@
         right: 0;
         width: 100%;
         height: 100vh;
-        background: $light-grey;
         transform: translateX(100%); /* Oculto a la derecha */
         transition: transform 0.3s ease-in-out;
         padding: 20px;
@@ -43,18 +42,28 @@
     }
 
     &__close {
+        display:flex;
+        align-items: center;
+        justify-content: center;
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 40px;
+        right: 40px;
         width: 40px;
         height: 40px;
-        background: transparent;
         border: none;
-        color: white;
+        color: $dark-grey;
         font-size: 2rem;
         cursor: pointer;
         z-index: 20;
         transition: transform 0.3s ease;
+    }
+
+    &__close:active {
+        transform: rotate(90deg) scale(0.95);
+    }
+
+    &__close:hover {
+        transform: rotate(90deg) scale(1.08);
     }
 
     &__list {
