@@ -29,7 +29,17 @@
         transition: transform 0.3s ease-in-out;
         padding: 20px;
         overflow-y: auto;
-        
+        background: radial-gradient(
+                        circle at top right,
+                        rgba(241, 252, 91, .35),
+                        transparent 55%
+                    ),
+                    radial-gradient(
+                        circle at bottom left,
+                        rgba(109, 186, 255, .35),
+                        transparent 60%
+                    ),
+                    white;       
     }
 
     &__close {
