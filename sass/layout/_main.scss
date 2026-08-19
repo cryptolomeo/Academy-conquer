@@ -1,6 +1,7 @@
 @use "../abstracts/variables" as *;
 main {
   background:
+    url("../img/common/plus.svg"),
     radial-gradient(
       circle at top left,
       rgba($brand-primary, 0.25),
@@ -12,4 +13,5 @@ main {
       transparent 70%
     ),
     white;
+    background-repeat: repeat;
 }
