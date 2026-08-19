@@ -1,43 +1,42 @@
 @use "../abstracts/variables" as *;
-.hero{
-    position: relative;
-    background: transparent;
-    color: $text-color;
-    margin-bottom: 30px;
-    
-    
-    &__container{
-        display: flex;
-        flex-direction: column;
-        
-    }
+.hero {
+  position: relative;
+  background: transparent;
+  color: $text-color;
+  margin-bottom: 30px;
 
-    &__title{}
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
 
-    &__title strong {
-        background: $gradient;
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-    }
+  &__title {
+  }
 
-    &__description{
-        margin-bottom: 35px;
-    }
+  &__title strong {
+    background: $gradient;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 
-    &__figure{
-        margin-bottom: 20px;
-        padding: 5px 0px;
-    }
+  &__description {
+    margin-bottom: 35px;
+  }
 
-    &__image{
-        width: 100%;
-        height: auto;
-        margin-top: 10px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+  &__figure {
+    margin-bottom: 20px;
+    padding: 5px 0px;
+  }
 
-    &__caption{}
+  &__image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 
-} 
+  &__caption {
+  }
+}

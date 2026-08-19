@@ -1,37 +1,36 @@
 @charset "UTF-8";
 
 // 1. Vendors
-@use 'vendors/normalize';
+@use "vendors/normalize";
 
 // 2. Base stuff
-@use 'base/base';
-@use 'base/fonts';
-@use 'base/helpers';
-@use 'base/reset';
-@use 'base/typography';
+@use "base/base";
+@use "base/fonts";
+@use "base/helpers";
+@use "base/reset";
+@use "base/typography";
 
 // 3. Layout-related sections
-@use 'layout/body';
-@use 'layout/container';
-@use 'layout/cursos';
-@use 'layout/footer';
-@use 'layout/forms';
-@use 'layout/grid';
-@use 'layout/header';
-@use 'layout/header-navbar';
-@use 'layout/quienes-somos';
-@use 'layout/sidebar';
-@use 'layout/main';
-
+@use "layout/body";
+@use "layout/container";
+@use "layout/cursos";
+@use "layout/footer";
+@use "layout/forms";
+@use "layout/grid";
+@use "layout/header";
+@use "layout/header-navbar";
+@use "layout/quienes-somos";
+@use "layout/sidebar";
+@use "layout/main";
 
 // 4. Components
-@use 'components/button';
-@use 'components/hero';
-@use 'components/activities';
-@use 'components/card';
+@use "components/button";
+@use "components/hero";
+@use "components/activities";
+@use "components/card";
 
 // 5. Pages
-@use 'pages/home';
+@use "pages/home";
 
 // 6. Themes
-@use 'themes/default';
+@use "themes/default";

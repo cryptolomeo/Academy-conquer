@@ -1,15 +1,15 @@
 @use "../abstracts/variables" as *;
 main {
-    background:
-        radial-gradient(
-            circle at top left,
-            rgba($brand-primary, 0.25),
-            transparent 70%
-        ),
-        radial-gradient(
-            circle at bottom right,
-            rgba($brand-secondary, 0.22),
-            transparent 70%
-        ),
-        white;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba($brand-primary, 0.25),
+      transparent 70%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba($brand-secondary, 0.22),
+      transparent 70%
+    ),
+    white;
 }

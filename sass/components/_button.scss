@@ -4,42 +4,42 @@
 @use "../abstracts" as *;
 
 .button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
-    padding:  0.75rem 1.25rem;
+  padding: 0.75rem 1.25rem;
 
-    color: $text-color;
-    background: $gradient;
+  color: $text-color;
+  background: $gradient;
 
-    border: 3px solid $text-color;
-    border-radius: 999px;
+  border: 3px solid $text-color;
+  border-radius: 999px;
 
-    // font-size: 1rem;
-    // font-weight: 600;
-    // line-height: 1;
+  // font-size: 1rem;
+  // font-weight: 600;
+  // line-height: 1;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition:
-        transform 0.3s ease,
-        background-color 0.3s ease,
-        box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
 
-    &:hover {
-        transform: translateY(-2px) scale(1.02);
-        background: $gradient-reverse;
-        box-shadow: 0 8px 25px rgba($text-color, 0.3);
-    }
+  &:hover {
+    transform: translateY(-2px) scale(1.02);
+    background: $gradient-reverse;
+    box-shadow: 0 8px 25px rgba($text-color, 0.3);
+  }
 
-    &:active {
-        transform: translateY(1px)
-    }
+  &:active {
+    transform: translateY(1px);
+  }
 
-    &:focus-visible {
-        outline: 3px solid $brand-secondary;
-        outline-offset: 3px;
-        border: none;
-    }
+  &:focus-visible {
+    outline: 3px solid $brand-secondary;
+    outline-offset: 3px;
+    border: none;
+  }
 }

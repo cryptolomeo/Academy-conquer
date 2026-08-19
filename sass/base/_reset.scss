@@ -1,15 +1,15 @@
-@use '../abstracts';
+@use "../abstracts";
 
 *,
 *::before,
-*::after  {
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
