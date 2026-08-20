@@ -1,0 +1,57 @@
+@use "../abstracts/variables" as *;
+.card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba($text-color, .12);
+  }
+
+  &:active {
+    transform: translateY(-4px) scale(0.95);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background: $gradient;
+  }
+
+  &__img {
+    margin: 20px 0;
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    flex: 1;
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  &__link {
+    margin-top: auto;
+    align-self: flex-end;
+    width: fit-content;
+  }
+
+}
