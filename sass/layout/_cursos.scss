@@ -1,0 +1,24 @@
+.cursos {
+  margin-bottom: 2rem;
+
+  // &__title {}
+
+  // &__description {}
+
+  &__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  &__cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  // &__cta-text {}
+}
