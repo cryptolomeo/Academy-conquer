@@ -156,35 +156,66 @@
       </div>
     </section>
 
-    <section class="noticias">
-      <h2>Noticias</h2>
-      <p>Navega en nuestras noticias mas interesantes</p>
+    <section class="news">
+      <div class="container">
+        <h2 class="news__title">Noticias</h2>
+        <p class="news__description">Navega en nuestras noticias mas interesantes:</p>
 
-      <nav>
-        <div class="noticias-container">
-          <article>
-            
+        <div class="cards-grid">
+          <article class="card card--news">
+
             <!--https://www.conquerblocks.com/post/desarrollo-full-stack-para-perfiles-junior-->
-            <h3>Desarrollo Full Stack para perfiles Junior</h3>
-            <img width="200" src="img/blog/grupo-programadores-ordenadores-1920x1280-p-500.jpg" alt="Logo curso full stack">
-            <p>En el dinámico mundo del desarrollo web, el rol de desarrollador Full Stack ha emergido como una carrera codiciada, ofreciendo 
-              la promesa de dominar tanto el frontend</p>
-            <p><a href="blog/fulstack-junior.html">Leer más</a></p>
+
+            <img class="card__img" width="400" height="250" src="img/blog/grupo-programadores-ordenadores-1920x1280-p-500.jpg" alt="Desarrolladores trabajando frente a ordenadores" loading="lazy">
+
+            <div class="card__body">
+
+              <div class="card__meta">
+                <span class="card__category">Tecnología</span>
+                <time datetime="2026-08-20">
+                    20 agosto 2026
+                </time>
+              </div>
+
+              <h3 class="card__title">Desarrollo Full Stack para perfiles Junior</h3>
+              <p class="card__description">En el dinámico mundo del desarrollo web, el rol de desarrollador Full Stack ha emergido como una carrera codiciada, ofreciendo la promesa de dominar tanto el frontend ...</p>
+              <a class="button card__link" href="blog/fulstack-junior.html">Leer más <i class="fas fa-arrow-right"></i></a>
+
+            </div>
           </article>
 
-          <article>
-            <!--https://www.conquerblocks.com/post/el-desarrollo-full-stack-y-javascript-una-relacion-sinergica-en-la-era-digital-->
-            <h3>El desarrollo Full-Stack y JavaScript: Una Relación Sinérgica en la Era Digital</h3>
-            <img width="200" src="img/blog/js-p-500.png" alt="Logo curso blockchain">
-            <p>JavaScript comenzó como un lenguaje diseñado para añadir interactividad a las páginas web en el navegador. Sin embargo, con el tiempo, su alcance se ha</p>
-            <p><a href="blog/fullstack-javascript.html">Ver más</a></p>
-          </article>
-        
-          <p>Accede a ver las noticias destacadas. <a href="blog.html">Ver más</a></p>
+          <article class="card card--news">
 
+              <!--https://www.conquerblocks.com/post/el-desarrollo-full-stack-y-javascript-una-relacion-sinergica-en-la-era-digital-->
+
+              <img class="card__img" width="400" height="250" src="img/blog/js-p-500.png" alt="imagen tecnologica" loading="lazy">
+
+              <div class="card__body">
+
+                <div class="card__meta">
+                  <span class="card__category">Tecnología</span>
+                  <time datetime="2026-08-21">
+                      21 agosto 2026
+                  </time>
+                </div>
+
+                <h3 class="card__title">El desarrollo Full-Stack y JavaScript: Una Relación Sinérgica en la Era Digital</h3>
+                <p class="card__description">JavaScript comenzó como un lenguaje diseñado para añadir interactividad a las páginas web en el navegador. Sin embargo, con el tiempo, su alcance se ha ...</p>
+                <a class="button card__link" href="blog/fullstack-javascript.html">Leer más <i class="fas fa-arrow-right"></i></a>
+
+              </div>
           </article>
+
         </div>
-      </nav>
+
+        <div class="news__cta">
+          <h4 class="news__cta-text">
+            Accede a ver las noticias destacadas.
+          </h4>
+          <a class="button" href="blog.html">Ver todas la noticias.
+          </a>
+        </div>
+      </div>
     </section>
 
   </main>
