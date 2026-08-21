@@ -1,15 +1,9 @@
-.cursos {
+.courses {
   margin-bottom: 2rem;
 
   // &__title {}
 
   // &__description {}
-
-  &__grid {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  }
 
   &__cta {
     display: flex;
