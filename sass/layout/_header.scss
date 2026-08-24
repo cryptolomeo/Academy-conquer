@@ -5,17 +5,17 @@
 
 .header {
   position: relative;
-  overflow-x: clip;
-  z-index: 10;
+  background: $mid-grey;
 
   &::before {
     content: "";
     position: absolute;
-    inset: 0;
-    background: rgba($mid-grey, 0.3);
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
-    z-index: -1;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 2px;
+    background: $gradient;
+
   }
 
   &__container {
