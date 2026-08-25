@@ -23,34 +23,59 @@
 </head>
 
 <body>
-  <header>
-    <!--Logotipo-->
-    <a href="index.html" >
-      <figure>
-        <img width="150" src="/img/common/Conquer-Blocks-logo.avif" alt="logotipo de la escuela online" 
-        loading="lazy">
-      </figure>
-    </a>
+    <header class="header">
+    <div class="container">
+      <div class="header__container">
+        <!--Logotipo-->
+        <a class="header__logo" href="index.html" >
+          <figure>
+            <img width="150" src="/img/common/Conquer-Blocks-logo.avif" alt="logotipo de la escuela online"
+            loading="lazy">
+          </figure>
+        </a>
 
-    <!--Menu de navegación-->
-    <nav class="container-menu">
-      <ul>  
-        <li>Home</li>
-        <li><a href="quienessomos.html">Quienes somos</a></li>
-        <li><a href="cursos.html">Cursos</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li>Registro</li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>  
-    </nav>
+        <!-- Menu hamburguesa mobile -->
+        <input type="checkbox" id="header__menu-toggle" class="header__menu-toggle">
+        <label for="header__menu-toggle" class="header__hamburger">
+          ☰
+        </label>
 
+        <!--Menu de navegación-->
+        <nav class="header__navbar">
+          <label class="header__close" for="header__menu-toggle">✕</label>
+
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link header__link--active button" href="index.html">Home</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="quienessomos.html">Quienes somos</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="cursos.html">Cursos</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="blog.html">Blog</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="registro.html">Registro</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="login.html">Login</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
-  
+
   <main>
     <h1>Formulario de inscripcion a la escuela Conquer</h1>
     <p>Rellene cuidadosamente el formulario de inscripción para poder acceder a nuestra academia.</p>
-    
+
     <form action="post" enctype="multipart/form-data">
       <p><fieldset>
         <legend>Nombre del alumno</legend>
@@ -72,7 +97,7 @@
         <legend>Fecha de nacimiento</legend>
         <input type="date" name="birth" id="birth" required>
         <label for="birth">Fecha</label>
-      </fieldset></p>  
+      </fieldset></p>
 
       <p><fieldset>
         <legend>Género</legend>
@@ -99,17 +124,17 @@
       <p><fieldset>
         <legend>Email</legend>
         <input type="text" name="email" id="email">
-        <label for="email">ejemplo@ejemplo.com</label>          
+        <label for="email">ejemplo@ejemplo.com</label>
       </fieldset></p>
 
       <p><fieldset>
         <legend>Número de teléfono</legend>
         <input type="tel" name="telphone" id="telphone">
-        <label for="email">Ingrese un numero de teléfono válido</label>          
+        <label for="email">Ingrese un numero de teléfono válido</label>
       </fieldset></p>
 
       <p><input type="submit" value="Envío">
-      <input type="reset" value="Borrar formulario"></p>      
+      <input type="reset" value="Borrar formulario"></p>
 
     </form>
 
