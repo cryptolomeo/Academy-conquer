@@ -23,30 +23,55 @@
 </head>
 
 <body>
-    <header>
-    <!--Logotipo-->
-    <a href="index.html" >
-      <figure>
-        <img width="150" src="/img/common/Conquer-Blocks-logo.avif" alt="logotipo de la escuela online" 
-        loading="lazy">
-      </figure>
-    </a>
+      <header class="header">
+    <div class="container">
+      <div class="header__container">
+        <!--Logotipo-->
+        <a class="header__logo" href="index.html" >
+          <figure>
+            <img width="150" src="/img/common/Conquer-Blocks-logo.avif" alt="logotipo de la escuela online"
+            loading="lazy">
+          </figure>
+        </a>
 
-    <!--Menu de navegación-->
-    <nav class="container-menu">
-      <ul>  
-        <li><a href="index.html"></a>Home</li>
-        <li><a href="quienessomos.html">Quienes somos</a></li>
-        <li><a href="cursos.html">Cursos</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="registro.html">Registro</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li>Contacto</li>
-      </ul>  
-    </nav>
+        <!-- Menu hamburguesa mobile -->
+        <input type="checkbox" id="header__menu-toggle" class="header__menu-toggle">
+        <label for="header__menu-toggle" class="header__hamburger">
+          ☰
+        </label>
 
+        <!--Menu de navegación-->
+        <nav class="header__navbar">
+          <label class="header__close" for="header__menu-toggle">✕</label>
+
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link header__link--active button" href="index.html">Home</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="quienessomos.html">Quienes somos</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="cursos.html">Cursos</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="blog.html">Blog</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="registro.html">Registro</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="login.html">Login</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
-  
+
   <main>
     <h1>Contacto</h1>
     <p>contacta con nosotros y haznos las consultas que necesites.</p>
@@ -61,7 +86,7 @@
 
         <p>
           <label for="email">Email</label>
-          <input type="text" name="email" id="email">  
+          <input type="text" name="email" id="email">
         </p>
 
         <p>
@@ -72,15 +97,15 @@
         <p>
           <input type="submit" value="Envío">
           <input type="reset" value="Borrar formulario">
-        </p> 
+        </p>
       </form>
     </section>
 
     <section>
       <h2>Puedes encontrarnos en:</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d373.0546053573015!2d-4.720122200279669!3d41.58143140895668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4714a901b911d3%3A0x710e3491009f5235!2sCUSTOM%20PC%20LAGUNA%20-%20APP%20LAGUNA!5e0!3m2!1ses!2ses!4v1750765267797!5m2!1ses!2ses" 
-      width="600" height="400" style="border:0;" 
-      allowfullscreen="" loading="lazy" 
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d373.0546053573015!2d-4.720122200279669!3d41.58143140895668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4714a901b911d3%3A0x710e3491009f5235!2sCUSTOM%20PC%20LAGUNA%20-%20APP%20LAGUNA!5e0!3m2!1ses!2ses!4v1750765267797!5m2!1ses!2ses"
+      width="600" height="400" style="border:0;"
+      allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     </section>
@@ -96,7 +121,7 @@
   </footer>
 
   <script type="module" src="/main.js"></script>
-  
+
 </body>
 
 </html>
