@@ -1,3 +1,63 @@
-* {
-  outline: 1px solid red;
+@use "../abstracts/variables" as *;
+
+.about {
+
+  position: relative;
+  background: transparent;
+  color: $text-color;
+  margin-bottom: 2rem;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+
+  }
+
+  &__description {
+    max-width: 380px;
+    text-align: center;
+  }
+
+  &__team-title {
+    justify-self: center;
+  }
+
+  &__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  &__person {
+    display: grid;
+    grid-template-areas:
+      "image"
+      "name"
+      "role";
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+
+  }
+
+  &__image {
+    grid-area: image;
+    justify-self: center;
+    border-radius: 999px;
+  }
+
+  &__name {
+    grid-area: name;
+    justify-self: center;
+
+  }
+
+  &__role {
+    grid-area: role;
+    justify-self: center;
+  }
+
 }
