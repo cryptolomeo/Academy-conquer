@@ -5,7 +5,7 @@
   position: relative;
   background: transparent;
   color: $text-color;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 
   &__container {
     display: flex;
@@ -58,6 +58,7 @@
   &__role {
     grid-area: role;
     justify-self: center;
+    color: $dark-grey;
   }
 
 }
