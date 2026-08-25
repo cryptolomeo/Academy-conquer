@@ -23,30 +23,55 @@
 </head>
 
 <body>
-  <header>
-    <!--Logotipo-->
-    <a href="index.html" >
-      <figure>
-        <img width="150" src="/img/common/Conquer-Blocks-logo.avif" alt="logotipo de la escuela online" 
-        loading="lazy">
-      </figure>
-    </a>
+    <header class="header">
+    <div class="container">
+      <div class="header__container">
+        <!--Logotipo-->
+        <a class="header__logo" href="index.html" >
+          <figure>
+            <img width="150" src="/img/common/Conquer-Blocks-logo.avif" alt="logotipo de la escuela online"
+            loading="lazy">
+          </figure>
+        </a>
 
-    <!--Menu de navegación-->
-    <nav class="container-menu">
-      <ul>  
-        <li><a href="index.html">Home</a></li>
-        <li><a href="quienessomos.html">Quienes somos</a></li>
-        <li><a href="cursos.html">Cursos</a></li>
-        <li>Blog</li>
-        <li><a href="registro.html">Registro</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>  
-    </nav>
+        <!-- Menu hamburguesa mobile -->
+        <input type="checkbox" id="header__menu-toggle" class="header__menu-toggle">
+        <label for="header__menu-toggle" class="header__hamburger">
+          ☰
+        </label>
 
+        <!--Menu de navegación-->
+        <nav class="header__navbar">
+          <label class="header__close" for="header__menu-toggle">✕</label>
+
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link header__link--active button" href="index.html">Home</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="quienessomos.html">Quienes somos</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="cursos.html">Cursos</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="blog.html">Blog</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="registro.html">Registro</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="login.html">Login</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
-  
+
   <main>
     <section>
       <h1>Descubre las ultimas noticias relacionadas con el Desarrollo</h1>
@@ -58,11 +83,11 @@
       <nav>
         <div class="noticias-container">
           <article>
-            
+
             <!--https://www.conquerblocks.com/post/desarrollo-full-stack-para-perfiles-junior-->
             <h3>Desarrollo Full Stack para perfiles Junior</h3>
             <img width="200" src="img/blog/grupo-programadores-ordenadores-1920x1280-p-500.jpg" alt="Logo curso full stack">
-            <p>En el dinámico mundo del desarrollo web, el rol de desarrollador Full Stack ha emergido como una carrera codiciada, ofreciendo 
+            <p>En el dinámico mundo del desarrollo web, el rol de desarrollador Full Stack ha emergido como una carrera codiciada, ofreciendo
               la promesa de dominar tanto el frontend</p>
             <p><a href="blog/fulstack-junior.html">Leer más</a></p>
           </article>
@@ -74,7 +99,7 @@
             <p>JavaScript comenzó como un lenguaje diseñado para añadir interactividad a las páginas web en el navegador. Sin embargo, con el tiempo, su alcance se ha</p>
             <p><a href="blog/fullstack-javascript.html">Ver más</a></p>
           </article>
-        
+
           <p>Accede a ver las noticias destacadas. <a href="blog.html">Ver más</a></p>
 
           </article>
@@ -93,7 +118,7 @@
   </footer>
 
   <script type="module" src="/main.js"></script>
-  
+
 </body>
 
 </html>
