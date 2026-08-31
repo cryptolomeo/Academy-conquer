@@ -72,74 +72,138 @@
     </div>
   </header>
 
-  <main>
-    <h1>Formulario de inscripcion a la escuela Conquer</h1>
-    <p>Rellene cuidadosamente el formulario de inscripción para poder acceder a nuestra academia.</p>
+<main>
+  <section class="register">
+    <div class="container">
+      <div class="register__container">
+        <h1 class="register__title">
+          Formulario de inscripción
+        </h1>
 
-    <form action="post" enctype="multipart/form-data">
-      <p><fieldset>
-        <legend>Nombre del alumno</legend>
-        <input type="text" name="name" id="name">
-        <label for="name">Nombre</label>
-        <input type="text" name="last-name" id="last-name">
-        <label for="last-name">Apellido</label>
-        <input type="text" name="second-last-name" id="second-last-name">
-        <label for="second-last-name">Segundo apellido</label>
-        <p><label for="photo">Subir fotografía</label>
-        <input type="file" name="photo" id="photo"></p>
-        <p><label for="bioa">Biografía</label><br>
-        <textarea name="bio" id="" cols="60" rows="5"></textarea></p>
-      </fieldset></p>
+        <p class="register__description">
+          Rellena cuidadosamente el formulario de inscripción para
+          poder acceder a nuestra academia.
+        </p>
+
+        <form class="register__form" method="post" enctype="multipart/form-data">
+
+          <fieldset class="register__fieldset">
+            <legend class="register__legend">Datos personales</legend>
+
+            <div class="register__field">
+              <label class="register__label" for="name">Nombre</label>
+              <input class="register__control" type="text" name="name" id="name" required>
+            </div>
+
+            <div class="register__field">
+              <label class="register__label" for="last-name">Primer apellido</label>
+              <input class="register__control" type="text" name="last-name" id="last-name" required>
+            </div>
+
+            <div class="register__field">
+              <label class="register__label" for="second-last-name">Segundo apellido</label>
+              <input class="register__control"
+                type="text"
+                name="second-last-name"
+                id="second-last-name"
+              >
+            </div>
+
+            <div class="register__field">
+              <label class="register__label" for="birth">Fecha de nacimiento</label>
+              <input class="register__control" type="date" name="birth" id="birth" required>
+            </div>
+
+            <div class="register__field">
+              <label class="register__label" for="gender">Género</label>
+              <select class="register__control" name="gender" id="gender">
+                <option value="">Selecciona una opción</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+              </select>
+            </div>
+
+            <div class="register__field">
+              <label class="register__label" for="photo">Fotografía</label>
+              <input class="register__control register__control--photo" type="file" name="photo" id="photo">
+            </div>
+
+            <div class="register__field">
+              <label class="register__label" for="bio">Biografía</label>
+              <textarea
+                class="register__control"
+                name="bio"
+                id="bio"
+                rows="5"
+              ></textarea>
+            </div>
+          </fieldset>
 
 
+          <fieldset class="register__fieldset">
+            <legend class="register__legend">Datos de contacto</legend>
 
-      <p><fieldset>
-        <legend>Fecha de nacimiento</legend>
-        <input type="date" name="birth" id="birth" required>
-        <label for="birth">Fecha</label>
-      </fieldset></p>
+            <div class="register__field">
+              <label class="register__label" for="email">Correo electrónico</label>
+              <input
+                class="register__control"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="ejemplo@ejemplo.com"
+                required
+              >
+            </div>
 
-      <p><fieldset>
-        <legend>Género</legend>
-        <label for="gender">Elige un género:</label>
-        <select name="gender" id="gender">
-          <option value="">-</option>
-          <option value="Varon">Masculino</option>
-          <option value="Mujer">Femenino</option>
-        </select>
-      </fieldset></p>
-
-      <p><fieldset>
-        <legend>Dirección</legend>
-        <input type="text" name="address" id="address">
-        <label for="address">Dirección de la calle</label>
-        <input type="text" name="city" id="city">
-        <label for="city">Ciudad</label>
-        <input type="text" name="state" id="state">
-        <label for="state">Estado</label>
-        <input type="text" name="post-code" id="post-code">
-        <label for="post-code">Código Postal</label>
-      </fieldset></p>
-
-      <p><fieldset>
-        <legend>Email</legend>
-        <input type="text" name="email" id="email">
-        <label for="email">ejemplo@ejemplo.com</label>
-      </fieldset></p>
-
-      <p><fieldset>
-        <legend>Número de teléfono</legend>
-        <input type="tel" name="telphone" id="telphone">
-        <label for="email">Ingrese un numero de teléfono válido</label>
-      </fieldset></p>
-
-      <p><input type="submit" value="Envío">
-      <input type="reset" value="Borrar formulario"></p>
-
-    </form>
+            <div class="register__field">
+              <label class="register__label" for="telephone">Número de teléfono</label>
+              <input
+                class="register__control"
+                type="tel"
+                name="telephone"
+                id="telephone"
+                placeholder="600 000 000"
+              >
+            </div>
+          </fieldset>
 
 
-  </main>
+          <fieldset class="register__fieldset">
+            <legend class="register__legend">Dirección</legend>
+
+            <div class="register__field">
+              <label class="register__label" for="address">Dirección</label>
+              <input class="register__control" type="text" name="address" id="address">
+            </div>
+
+            <div class="register__field">
+              <label class="register__label" for="city">Ciudad</label>
+              <input class="register__control" type="text" name="city" id="city">
+            </div>
+
+            <div class="register__field">
+              <label class="register__label" for="state">Provincia</label>
+              <input class="register__control" type="text" name="state" id="state">
+            </div>
+
+            <div class="register__field">
+              <label class="register__label" for="post-code">Código postal</label>
+              <input class="register__control" type="text" name="post-code" id="post-code">
+            </div>
+          </fieldset>
+
+
+          <div class="register__actions">
+            <button class="button" type="submit">
+              Enviar
+            </button>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
 
   <footer class="footer">
     <div class="container">
