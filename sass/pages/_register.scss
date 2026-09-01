@@ -54,10 +54,16 @@
 
   &__control {
     width: 100%;
-    max-width: 100%;
-    border: 1px solid $brand-secondary;
-    height: 1.7rem;
-    padding-inline: 0.5rem;
+    padding: 0.7rem 0.8rem;
+    border: 1px solid $mid-grey;
+    border-radius: 6px;
+    outline: none;
+  }
+
+  &__control:focus {
+    border-color: $brand-secondary;
+    outline: 2px solid rgba($brand-secondary, 0.25);
+    outline-offset: 2px;
   }
 
   &__control--photo {
