@@ -1,0 +1,70 @@
+@use "../abstracts/variables" as *;
+
+.contact {
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  &__title {
+    margin-bottom: 0.4rem;
+  }
+
+  &__description {}
+
+  &__section {}
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__subtitle {}
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  &__label {}
+
+  &__control {
+    width: 100%;
+    padding: 0.7rem 0.8rem;
+    border: 1px solid $mid-grey;
+    border-radius: 6px;
+    outline: none;
+  }
+
+  &__control:focus {
+    border-color: $brand-secondary;
+    outline: 2px solid rgba($brand-secondary, 0.25);
+    outline-offset: 2px;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 1rem;
+
+  }
+
+  &__map {
+    width: 100%;
+  }
+
+  &__info {}
+
+  &__info-title {
+    margin-bottom: 1rem;
+  }
+
+  &__info-item {
+    margin-bottom: 0.8rem;
+  }
+}
