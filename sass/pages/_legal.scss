@@ -1,0 +1,18 @@
+.legal {
+  flex: 1;
+  padding-block: 3rem;
+
+  &__title {
+    margin-inline: auto;
+    max-width: 500px;
+  }
+
+  &__section {
+    max-width: 500px;
+    margin-inline: auto;
+  }
+
+  &__description {
+    line-height: 1.6;
+  }
+}
