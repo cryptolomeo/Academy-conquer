@@ -1,0 +1,217 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario de inscripción en academia Conquer</title>
+
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <header class="header">
+    <div class="container">
+      <div class="header__container">
+        <!--Logotipo-->
+        <a class="header__logo" href="index.html" >
+            <img width="150" src="/img/common/Conquer-Blocks-logo.avif" alt="logotipo de la escuela online"
+            loading="lazy">
+        </a>
+
+        <!-- Menu hamburguesa mobile -->
+        <input type="checkbox" id="header__menu-toggle" class="header__menu-toggle">
+        <label for="header__menu-toggle" class="header__hamburger">
+          ☰
+        </label>
+
+        <!--Menu de navegación-->
+        <nav class="header__navbar">
+          <label class="header__close" for="header__menu-toggle">✕</label>
+
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link button" href="index.html">Home</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="quienessomos.html">Quienes somos</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="cursos.html">Cursos</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="blog.html">Blog</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link header__link--active button" href="registro.html">Registro</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="login.html">Login</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+<main>
+  <section class="register">
+    <div class="container">
+      <div class="register__container">
+        <h1 class="register__title">
+          Formulario de inscripción
+        </h1>
+
+        <p class="register__description">
+          Rellena cuidadosamente el formulario de inscripción para
+          poder acceder a nuestra academia.
+        </p>
+
+        <form class="register__form" method="post" enctype="multipart/form-data">
+
+          <fieldset class="register__fieldset">
+            <legend class="register__legend">Datos personales</legend>
+
+            <div class="register__field">
+              <label class="register__label" for="name">Nombre</label>
+              <input class="register__control" type="text" name="name" id="name" required>
+            </div>
+
+            <div class="register__field">
+              <label class="register__label" for="last-name">Primer apellido</label>
+              <input class="register__control" type="text" name="last-name" id="last-name" required>
+            </div>
+
+            <div class="register__field">
+              <label class="register__label" for="second-last-name">Segundo apellido</label>
+              <input class="register__control"
+                type="text"
+                name="second-last-name"
+                id="second-last-name"
+              >
+            </div>
+
+            <div class="register__field">
+              <label class="register__label" for="birth">Fecha de nacimiento</label>
+              <input class="register__control" type="date" name="birth" id="birth" required>
+            </div>
+
+            <div class="register__field">
+              <label class="register__label" for="gender">Género</label>
+              <select class="register__control" name="gender" id="gender">
+                <option value="">Selecciona una opción</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+              </select>
+            </div>
+
+            <div class="register__field">
+              <label class="register__label" for="photo">Fotografía</label>
+              <input class="register__control register__control--photo" type="file" name="photo" id="photo">
+            </div>
+
+            <div class="register__field">
+              <label class="register__label" for="bio">Biografía</label>
+              <textarea
+                class="register__control"
+                name="bio"
+                id="bio"
+                rows="5"
+              ></textarea>
+            </div>
+          </fieldset>
+
+
+          <fieldset class="register__fieldset">
+            <legend class="register__legend">Datos de contacto</legend>
+
+            <div class="register__field">
+              <label class="register__label" for="email">Correo electrónico</label>
+              <input
+                class="register__control"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="ejemplo@ejemplo.com"
+                required
+              >
+            </div>
+
+            <div class="register__field">
+              <label class="register__label" for="telephone">Número de teléfono</label>
+              <input
+                class="register__control"
+                type="tel"
+                name="telephone"
+                id="telephone"
+                placeholder="600 000 000"
+              >
+            </div>
+          </fieldset>
+
+
+          <fieldset class="register__fieldset">
+            <legend class="register__legend">Dirección</legend>
+
+            <div class="register__field">
+              <label class="register__label" for="address">Dirección</label>
+              <input class="register__control" type="text" name="address" id="address">
+            </div>
+
+            <div class="register__field">
+              <label class="register__label" for="city">Ciudad</label>
+              <input class="register__control" type="text" name="city" id="city">
+            </div>
+
+            <div class="register__field">
+              <label class="register__label" for="state">Provincia</label>
+              <input class="register__control" type="text" name="state" id="state">
+            </div>
+
+            <div class="register__field">
+              <label class="register__label" for="post-code">Código postal</label>
+              <input class="register__control" type="text" name="post-code" id="post-code">
+            </div>
+          </fieldset>
+
+
+          <div class="register__actions">
+            <button class="button" type="submit">
+              Enviar
+            </button>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <footer class="footer">
+    <div class="container">
+      <!--Texto típico de copyright y enlace al aviso legal.-->
+      <p class="footer__text">© Copyright Ivan Rodriguez 2025 - <a class="footer__legal" href="aviso-legal.html">Aviso Legal</a></p>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+
+</body>
+
+</html>

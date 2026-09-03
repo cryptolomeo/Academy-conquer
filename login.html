@@ -1,0 +1,112 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__container">
+        <!--Logotipo-->
+        <a class="header__logo" href="index.html" >
+            <img width="150" src="/img/common/Conquer-Blocks-logo.avif" alt="logotipo de la escuela online"
+            loading="lazy">
+        </a>
+
+        <!-- Menu hamburguesa mobile -->
+        <input type="checkbox" id="header__menu-toggle" class="header__menu-toggle">
+        <label for="header__menu-toggle" class="header__hamburger">
+          ☰
+        </label>
+
+        <!--Menu de navegación-->
+        <nav class="header__navbar">
+          <label class="header__close" for="header__menu-toggle">✕</label>
+
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link button" href="index.html">Home</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="quienessomos.html">Quienes somos</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="cursos.html">Cursos</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="blog.html">Blog</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="registro.html">Registro</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link header__link--active button" href="login.html">Login</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link button" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="login">
+    <div class="container">
+      <div class="login__container">
+        <h1 class="login__title">Iniciar sesión</h1>
+
+        <p class="login__description">Para poder acceder a nuestra academia necesitamos que inicies sesión.</p>
+
+        <form class="login__form" method="POST" enctype="multipart/form-data">
+          <div class="login__field">
+            <label class="login__label" for="email">Email</label>
+            <input class="login__control" type="email" name="email" id="email">
+          </div>
+
+          <div class="login__field">
+            <label class="login__label" for="pass">Password</label>
+            <input class="login__control" type="password" name="pass" id="pass">
+          </div>
+
+          <div class="login__actions">
+            <button class="button" type="submit">
+              Iniciar sesión
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <!--Texto típico de copyright y enlace al aviso legal.-->
+      <p class="footer__text">© Copyright Ivan Rodriguez 2025 - <a class="footer__legal" href="aviso-legal.html">Aviso Legal</a></p>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+
+</body>
+
+</html>
