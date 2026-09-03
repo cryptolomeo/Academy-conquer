@@ -23,6 +23,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding-top: 5px;
+    padding-bottom: 5px;
     align-items: center;
   }
 
@@ -30,6 +31,7 @@
     align-self: center;
 
     & img {
+      display: block;
       width: auto;
       height: 25px;
     }
