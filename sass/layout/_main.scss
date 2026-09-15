@@ -1,7 +1,7 @@
 @use "../abstracts/variables" as *;
 main {
   background:
-    url("../img/common/plus.svg"),
+    url("../../img/common/plus.svg"),
     radial-gradient(
       circle at top left,
       rgba($brand-secondary, 0.25),
