@@ -107,4 +107,13 @@
       grid-column: 1 / -1;
     }
   }
+
+  &--hero {
+    .card__title strong {
+      background: $gradient;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+  }
 }
