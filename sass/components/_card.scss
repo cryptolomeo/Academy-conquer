@@ -81,6 +81,30 @@
   &__title {
     position: relative;
   }
-
 }
 
+.card {
+  &--mini {
+    .card__body {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    .card__logo {
+    width: 70px;
+    height: 70px;
+    aspect-ratio: 1 / 1;
+    }
+
+    .card__title {
+      align-self: center;
+      font-size: 1.25rem;
+    }
+
+    .card__description {
+      grid-column: 1 / -1;
+    }
+  }
+}
