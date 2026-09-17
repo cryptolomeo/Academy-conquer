@@ -1,39 +1,4 @@
 @use "../abstracts/variables" as *;
 .hero {
-  position: relative;
-  background: transparent;
-  color: $text-color;
-  margin-bottom: 2rem;
-
-  &__container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__title {
-  }
-
-  &__title strong {
-    background: $gradient;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-
-  &__description {}
-
-  &__figure {
-    padding: 5px 0px;
-  }
-
-  &__image {
-    width: 100%;
-    height: auto;
-    margin-top: 10px;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  &__caption {
-  }
+  padding-block: 2rem;
 }
