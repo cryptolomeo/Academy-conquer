@@ -73,21 +73,47 @@
     display: flex;
     flex-direction: column;
     align-items: start;
+    gap: 0.75rem;
     margin: 0;
     padding: 0;
   }
 
   &__item {
     padding: 5px;
-    margin-top: 15px;
   }
 
-  // &__link {}
+  &__link {
+    display: block;
+    padding: .75rem 1.25rem;
+    border: 3px solid $text-color;
+    border-radius: 999px;
+    background: $gradient;
+    color: $text-color;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1;
+  }
 
   &__link--active {
     box-shadow: none;
     transform: none;
     text-decoration: underline;
     text-underline-offset: 4px;
+  }
+}
+
+//TABLET
+
+@media (min-width: $bp-tablet) {
+  .header{
+
+    &__link {
+      padding: 0;
+      color: $text-color;
+      background: none;
+      border: none;
+      border-radius: 0;
+    }
   }
 }
