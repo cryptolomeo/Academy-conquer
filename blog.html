@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <header class="header">
+  <header class="header">
     <div class="container">
       <div class="header__container">
         <!--Logotipo-->
@@ -72,136 +72,135 @@
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-        <div class="container hero__container">
-          <h1 class="hero__title">
-            Las últimas novedades del mundo del desarrollo
-          </h1>
+  <main class="blog">
+    <div class="container">
+      <div class="blog__container">
+        <section class="blog__hero">
+            <h1 class="blog__title">
+              Las últimas novedades del mundo del desarrollo
+            </h1>
 
-          <p class="hero__description">
-            Mantente informado sobre las últimas tendencias, tecnologías y
-            novedades del sector tecnológico a través de nuestro blog.
-          </p>
-        </div>
-      </section>
+            <p class="blog__description">
+              Mantente informado sobre las últimas tendencias, tecnologías y
+              novedades del sector tecnológico a través de nuestro blog.
+            </p>
+        </section>
 
-    <section class="news">
-      <div class="container">
-        <h2 class="news__title">Últimas noticias</h2>
+        <section class="blog__news">
+          <h2 class="blog__title">Últimas noticias</h2>
 
-        <div class="cards-grid">
-          <article class="card card--news">
+          <div class="cards-grid">
+            <article class="card card--news">
 
-            <!--https://www.conquerblocks.com/post/desarrollo-full-stack-para-perfiles-junior-->
+              <!--https://www.conquerblocks.com/post/desarrollo-full-stack-para-perfiles-junior-->
 
-            <img class="card__img" width="400" height="250" src="img/blog/grupo-programadores-ordenadores-1920x1280-p-500.jpg" alt="Desarrolladores trabajando frente a ordenadores" loading="lazy">
-
-            <div class="card__body">
-
-              <div class="card__meta">
-                <span class="card__category">Tecnología</span>
-                <time datetime="2026-08-20">
-                    20 agosto 2026
-                </time>
-              </div>
-
-              <h3 class="card__title">Desarrollo Full Stack para perfiles Junior</h3>
-              <p class="card__description">En el dinámico mundo del desarrollo web, el rol de desarrollador Full Stack ha emergido como una carrera codiciada, ofreciendo la promesa de dominar tanto el frontend ...</p>
-              <a class="button card__link" href="https://www.conquerblocks.com/post/desarrollo-full-stack-para-perfiles-junior" target="_blank" rel="noopener noreferrer">
-                Leer más
-                <i class="fas fa-arrow-right"></i>
-              </a>
-
-            </div>
-          </article>
-
-          <article class="card card--news">
-
-              <!--https://www.conquerblocks.com/post/el-desarrollo-full-stack-y-javascript-una-relacion-sinergica-en-la-era-digital-->
-
-              <img class="card__img" width="400" height="250" src="img/blog/js-p-500.png" alt="imagen tecnologica" loading="lazy">
+              <img class="card__img" width="400" height="250" src="img/blog/grupo-programadores-ordenadores-1920x1280-p-500.jpg" alt="Desarrolladores trabajando frente a ordenadores" loading="lazy">
 
               <div class="card__body">
 
                 <div class="card__meta">
                   <span class="card__category">Tecnología</span>
-                  <time datetime="2026-08-21">
-                      21 agosto 2026
+                  <time datetime="2026-08-20">
+                      20 agosto 2026
                   </time>
                 </div>
 
-                <h3 class="card__title">El desarrollo Full-Stack y JavaScript: Una Relación Sinérgica en la Era Digital</h3>
-                <p class="card__description">JavaScript comenzó como un lenguaje diseñado para añadir interactividad a las páginas web en el navegador. Sin embargo, con el tiempo, su alcance se ha ...</p>
-                <a class="button card__link" href="https://www.conquerblocks.com/post/el-desarrollo-full-stack-y-javascript-una-relacion-sinergica-en-la-era-digital" target="_blank" rel="noopener noreferrer">
+                <h3 class="card__title">Desarrollo Full Stack para perfiles Junior</h3>
+                <p class="card__description">En el dinámico mundo del desarrollo web, el rol de desarrollador Full Stack ha emergido como una carrera codiciada, ofreciendo la promesa de dominar tanto el frontend ...</p>
+                <a class="button card__link" href="https://www.conquerblocks.com/post/desarrollo-full-stack-para-perfiles-junior" target="_blank" rel="noopener noreferrer">
                   Leer más
                   <i class="fas fa-arrow-right"></i>
                 </a>
 
               </div>
-          </article>
-        </div>
+            </article>
+
+            <article class="card card--news">
+
+                <!--https://www.conquerblocks.com/post/el-desarrollo-full-stack-y-javascript-una-relacion-sinergica-en-la-era-digital-->
+
+                <img class="card__img" width="400" height="250" src="img/blog/js-p-500.png" alt="imagen tecnologica" loading="lazy">
+
+                <div class="card__body">
+
+                  <div class="card__meta">
+                    <span class="card__category">Tecnología</span>
+                    <time datetime="2026-08-21">
+                        21 agosto 2026
+                    </time>
+                  </div>
+
+                  <h3 class="card__title">El desarrollo Full-Stack y JavaScript: Una Relación Sinérgica en la Era Digital</h3>
+                  <p class="card__description">JavaScript comenzó como un lenguaje diseñado para añadir interactividad a las páginas web en el navegador. Sin embargo, con el tiempo, su alcance se ha ...</p>
+                  <a class="button card__link" href="https://www.conquerblocks.com/post/el-desarrollo-full-stack-y-javascript-una-relacion-sinergica-en-la-era-digital" target="_blank" rel="noopener noreferrer">
+                    Leer más
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+
+                </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Implementacion futura, filtro por categorías
+        <section class="news__topics">
+          <div class="container">
+
+            <h2>Explora nuestros contenidos</h2>
+
+            <div class="cards-grid">
+
+              <article class="card">
+                <div class="card__body">
+                  <h3 class="card__title">Desarrollo Web</h3>
+                  <p class="card__description">
+                    Descubre novedades, herramientas y tendencias relacionadas
+                    con el desarrollo frontend y backend.
+                  </p>
+                </div>
+              </article>
+
+              <article class="card">
+                <div class="card__body">
+                  <h3 class="card__title">Blockchain</h3>
+                  <p class="card__description">
+                    Conoce las últimas novedades del ecosistema blockchain,
+                    sus tecnologías y sus principales aplicaciones.
+                  </p>
+                </div>
+              </article>
+
+              <article class="card">
+                <div class="card__body">
+                  <h3 class="card__title">JavaScript</h3>
+                  <p class="card__description">
+                    Aprende sobre nuevas herramientas, buenas prácticas y
+                    novedades del lenguaje más utilizado en la web.
+                  </p>
+                </div>
+              </article>
+
+            </div>
+
+          </div>
+        </section>
+        -->
+
+        <section class="blog__cta">
+          <div class="container">
+            <h2 class="blog__title">¿Quieres seguir aprendiendo?</h2>
+
+            <p class="blog__description">
+              Explora todos nuestros cursos y lleva tus conocimientos al siguiente nivel.
+            </p>
+
+            <a class="button" href="cursos.html">
+              Descubre nuestros cursos
+            </a>
+          </div>
+        </section>
       </div>
-    </section>
-
-    <!-- Implementacion futura, filtro por categorías
-    <section class="news__topics">
-      <div class="container">
-
-        <h2>Explora nuestros contenidos</h2>
-
-        <div class="cards-grid">
-
-          <article class="card">
-            <div class="card__body">
-              <h3 class="card__title">Desarrollo Web</h3>
-              <p class="card__description">
-                Descubre novedades, herramientas y tendencias relacionadas
-                con el desarrollo frontend y backend.
-              </p>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card__body">
-              <h3 class="card__title">Blockchain</h3>
-              <p class="card__description">
-                Conoce las últimas novedades del ecosistema blockchain,
-                sus tecnologías y sus principales aplicaciones.
-              </p>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card__body">
-              <h3 class="card__title">JavaScript</h3>
-              <p class="card__description">
-                Aprende sobre nuevas herramientas, buenas prácticas y
-                novedades del lenguaje más utilizado en la web.
-              </p>
-            </div>
-          </article>
-
-        </div>
-
-      </div>
-    </section>
-    -->
-
-  <section class="news__cta">
-    <div class="container">
-      <h2 class="news__title">¿Quieres seguir aprendiendo?</h2>
-
-      <p class="news__description">
-        Explora todos nuestros cursos y lleva tus conocimientos al siguiente nivel.
-      </p>
-
-      <a class="button" href="cursos.html">
-        Descubre nuestros cursos
-      </a>
     </div>
-  </section>
-
   </main>
 
   <footer class="footer">
