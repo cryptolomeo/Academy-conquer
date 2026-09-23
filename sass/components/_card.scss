@@ -117,3 +117,17 @@
     }
   }
 }
+
+@media (min-width: $bp-tablet) {
+  .card {
+
+    &--hero{
+
+      .card__body {
+        padding: 2rem 5rem;
+      }
+
+    }
+
+  }
+}
