@@ -79,3 +79,14 @@
 
   }
 }
+
+
+@media (min-width: $bp-tablet) {
+  .register {
+
+    &__container {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+}
