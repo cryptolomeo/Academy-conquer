@@ -99,7 +99,8 @@
     box-shadow: none;
     transform: none;
     text-decoration: underline;
-    text-underline-offset: 4px;
+    text-underline-offset: 6px;
+    font-weight: 800;
   }
 }
 
@@ -108,12 +109,56 @@
 @media (min-width: $bp-tablet) {
   .header{
 
-    &__link {
+    &__navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: auto;
+      background: rgba($mid-grey, .6);
+      padding: 5px 15px;
+      box-shadow: inset 0px 8px 8px 0px rgba($brand-primary, 0.3);
+    }
+
+    &__navbar::before {
+      content:"";
+      height: 3px;
+      width: 100%;
+      background: $gradient;
+      bottom: 0;
+      position: absolute;
+    }
+
+    &__close {
+
+      display:none;
+    }
+
+    &__list {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    &__item {
+      justify-content: center;
+      margin: 0;
       padding: 0;
-      color: $text-color;
+    }
+
+    &__link {
+      padding: 10px 0;
+      font-size: large;
+      font-weight: 600;
+      color: $dark-grey;
       background: none;
       border: none;
       border-radius: 0;
     }
+
+    &__link--active {
+      font-weight: 900;
+      text-underline-offset: 6px;
+  }
   }
 }
