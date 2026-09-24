@@ -15,7 +15,9 @@
 
   &__description {}
 
-  &__section {}
+  &__section {
+    padding-block: 1rem;
+  }
 
   &__form {
     display: flex;
@@ -58,7 +60,9 @@
     width: 100%;
   }
 
-  &__info {}
+  &__info {
+    padding-block: 1rem;
+  }
 
   &__info-title {
     margin-bottom: 1rem;
