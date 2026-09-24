@@ -72,3 +72,13 @@
     margin-bottom: 0.8rem;
   }
 }
+
+@media (min-width: $bp-tablet) {
+  .contact {
+
+    &__section {
+      width: 500px;
+      margin: 0 auto;
+    }
+  }
+}
