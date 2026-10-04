@@ -1,5 +1,6 @@
 @use "../abstracts/variables" as *;
 main {
+  flex :1;
   background:
     url("../../img/common/plus.svg"),
     radial-gradient(
