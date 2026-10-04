@@ -167,3 +167,30 @@
   }
   }
 }
+
+@media (min-width: $bp-tablet-horizontal) {
+  .header {
+    &__navbar {
+
+      position: static;
+      transform: translateY(0);
+      background: none;
+      box-shadow: none;
+    }
+
+    &__navbar::before {
+      content: none;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 2rem;
+    }
+
+    &__hamburger {
+      display: none;
+    }
+  }
+}
