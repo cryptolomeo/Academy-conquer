@@ -122,13 +122,36 @@
   .card {
 
     &--hero{
+      &::after{
+        content: "";
+        z-index: 1;
+        width: 100%;
+        height: 5px;
+        display: block;
+        overflow: hidden;
+        border-radius: 16px;
+        background: $gradient;
+      }
 
       .card__body {
         padding: 2rem 5rem;
+        text-align: center;
+      }
+
+      .card__media {
+        padding: 0;
+        height: 100%;
+
+      }
+
+      .card__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
 
     }
-
 
     &--horizontal {
       display: grid;
