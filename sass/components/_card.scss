@@ -233,3 +233,47 @@
     }
   }
 }
+
+@media (min-width: $bp-tablet-horizontal) {
+  .card {
+
+    &--hero {
+      display: grid;
+      grid-template-columns: 45% 55%;
+
+      &::after {
+        display: none;
+      }
+
+      .card__body {
+        grid-column: 1 / 2;
+        padding: 0 2rem;
+      }
+
+      .card__title {
+
+      }
+
+      .card__description {
+        padding-bottom: 2rem;
+      }
+
+      .card__media {
+        padding: 0;
+        height: 100%;
+
+      }
+
+      .card__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &::before {
+      grid-column: 1 / 3;
+    }
+  }
+}
