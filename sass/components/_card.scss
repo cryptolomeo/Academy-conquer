@@ -84,6 +84,7 @@
 }
 
 .card {
+  z-index: 2;
   &--mini {
     .card__body {
       display: grid;
