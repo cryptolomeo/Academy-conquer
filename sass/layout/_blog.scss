@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 .blog {
   padding-block: 2rem;
 
@@ -28,6 +30,10 @@
     gap: 1rem;
     padding-bottom: 3rem;
     text-align: center;
+
+    .network {
+      display: none;
+    }
   }
 
   &__title {
@@ -36,5 +42,60 @@
 
   &__description {
     text-align: center;
+  }
+}
+
+@media (min-width: $bp-tablet-horizontal) {
+  .blog {
+
+    &__container {
+      align-items: start;
+    }
+
+    &__hero {
+      align-items: start;
+    }
+
+    &__title {
+      text-align: start;
+    }
+
+    &__description {
+      text-align: start;
+    }
+
+    &__cta{
+      position: relative;
+      text-align: start;
+
+      .network {
+        position: absolute;
+        display: block;
+        bottom: -40%;
+        left: 115%;
+        width: 45%;
+        overflow: hidden;
+        rotate: 80deg;
+      }
+
+      .network-decoration {
+        position: absolute;
+        // pointer-events: auto;
+      }
+
+      .network-decoration__lines line {
+        stroke: url(#network-gradient);
+        stroke-width: 4;
+        fill: none;
+        opacity: 0.5;
+      }
+
+      .network-decoration__nodes circle {
+        fill: $light-grey;
+        stroke: url(#network-gradient);
+        stroke-width: 5;
+
+      }
+    }
   }
 }
