@@ -68,8 +68,26 @@
   }
 
   &__control--photo {
-    border: none;
-    padding-inline: 0;
+    border: 1px solid $mid-grey;
+    padding: 0.2rem 0.8rem;
+    cursor: pointer;
+    background: white;
+
+    &::file-selector-button {
+      padding: 0.6rem 1rem;
+      margin-right: 1rem;
+      border: none;
+      border-radius: 999px;
+      background: $gradient;
+      color: $text-color;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    &::file-selector-button:active{
+      transform: scale(0.97);
+    }
+
   }
 
   &__actions {
