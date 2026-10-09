@@ -55,6 +55,8 @@
 
 @media(min-width: $bp-tablet-horizontal) {
   .courses {
+    overflow: clip;
+
     &__container {
       align-items: start;
     }
@@ -130,10 +132,7 @@
           stroke: url(#network-gradient);
           stroke-width: 2;
           fill: none;
-          opacity: 0.5;
-          transition:
-            opacity 0.3s ease,
-            stroke-width 0.3s ease;
+
         }
 
         .network-decoration__nodes circle {
@@ -141,10 +140,6 @@
           stroke: url(#network-gradient);
           stroke-width: 3;
 
-          transition:
-            transform 0.3s ease,
-            fill 0.3s ease,
-            stroke 0.3s ease;
         }
       }
     }
@@ -154,10 +149,10 @@
       .network {
         position: absolute;
         display: block;
-        bottom: -40%;
-        left: 125%;
-        width: 45%;
-        overflow: hidden;
+        bottom: 25%;
+        left: 86%;
+        width: 96%;
+        height: 200%;
         rotate: 80deg;
       }
 
