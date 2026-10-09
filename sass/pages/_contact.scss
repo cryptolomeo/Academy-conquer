@@ -80,8 +80,10 @@
   .contact {
 
     &__section {
-      width: 500px;
-      margin: 0 auto;
+      width: 100%;
+      max-width: 500px;
+      margin-inline: auto;
+      min-width: 0;
     }
   }
 }
@@ -89,7 +91,7 @@
 @media (min-width:$bp-tablet-horizontal) {
     .contact {
     &__container {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       align-items: start;
       overflow: clip;
     }
