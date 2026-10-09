@@ -16,6 +16,10 @@
 
   &__section {
     padding-block: 1rem;
+
+    .network{
+      display: none;
+    }
   }
 
   &__form {
@@ -87,11 +91,42 @@
     &__container {
       grid-template-columns: 1fr 1fr;
       align-items: start;
+      overflow: clip;
     }
 
     &__section:first-child {
       grid-column: 2 / 3;
       grid-row: 1;
+      position: relative;
+
+      .network {
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 55%;
+        width: 33%;
+        height: 199%;
+        rotate: 80deg;
+      }
+
+      .network-decoration {
+        position: absolute;
+        // pointer-events: auto;
+      }
+
+      .network-decoration__lines line {
+        stroke: url(#network-gradient);
+        stroke-width: 4;
+        fill: none;
+        opacity: 0.5;
+      }
+
+      .network-decoration__nodes circle {
+        fill: $light-grey;
+        stroke: url(#network-gradient);
+        stroke-width: 5;
+
+      }
     }
 
     &__section:nth-child(2) {
