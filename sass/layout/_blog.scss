@@ -33,6 +33,7 @@
 
     .network {
       display: none;
+      overflow: hidden;
     }
   }
 
@@ -50,6 +51,8 @@
 
     &__container {
       align-items: start;
+
+      overflow: clip;
     }
 
     &__hero {
@@ -67,14 +70,15 @@
     &__cta{
       position: relative;
       text-align: start;
+      max-width: 55%;
 
       .network {
         position: absolute;
         display: block;
         bottom: -40%;
-        left: 115%;
-        width: 45%;
-        overflow: hidden;
+        left: 113%;
+        width: 50%;
+        height: 200%;
         rotate: 80deg;
       }
 
