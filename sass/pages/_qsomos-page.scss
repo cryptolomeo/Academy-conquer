@@ -100,3 +100,9 @@
 
   }
 }
+
+@media (min-width: $bp-tablet-horizontal) {
+  .quienes-somos{
+    text-align: start;
+  }
+}
