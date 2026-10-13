@@ -11,6 +11,10 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 3rem;
+
+    .network {
+      display: none;
+    }
   }
 
   &__content-title {
@@ -85,3 +89,141 @@
 
   &__button {}
 }
+
+@media (min-width: $bp-tablet-horizontal) {
+  .master {
+    overflow: clip;
+
+    &__content-title {
+      text-align: start;
+      margin: 1rem 0;
+    }
+
+    &__content-description {
+      text-align: start;
+    }
+
+    &__content-link {
+      align-self: center;
+    }
+
+    &__content {
+      align-items: start;
+      .cards-grid {
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 1.5rem;
+
+        .card__body {
+          gap: 0.5rem;
+          padding: 0.8rem;
+        }
+
+        .card:nth-child(1) {
+          grid-column: 4 / 8;
+          grid-row: 1;
+        }
+
+        .card:nth-child(2) {
+          grid-column: 5 / 9;
+          grid-row: 2;
+        }
+
+        .card:nth-child(3) {
+          grid-column: 6 / 10;
+          grid-row: 3;
+        }
+
+        .card:nth-child(4) {
+          grid-column: 7 / 11;
+          grid-row: 4;
+        }
+
+        .card:nth-child(5) {
+          grid-column: 1 / 5;
+          grid-row: 5;
+        }
+
+        .card:nth-child(6) {
+          grid-column: 5 / 9;
+          grid-row: 5;
+        }
+
+        .network {
+          display: block;
+          grid-column: 1 / 7;
+          grid-row: 1 / 5;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .network-decoration {
+          position: absolute;
+          top: -19%;
+          left: -16%;
+          width: 95%;
+          height: 145%;
+        }
+
+        .network-decoration__lines line {
+          stroke: url(#network-gradient);
+          stroke-width: 2;
+          fill: none;
+
+        }
+
+        .network-decoration__nodes circle {
+          fill: $light-grey;
+          stroke: url(#network-gradient);
+          stroke-width: 3;
+
+        }
+      }
+
+      .cards-grid--blockchain {
+        grid-template-rows: repeat(4, 1fr);
+      }
+    }
+
+    &__compromiso {
+      align-items: start;
+    }
+
+    &__compromiso{
+      position: relative;
+      width: 55%;
+      .network {
+        position: absolute;
+        display: block;
+        bottom: -49%;
+        left: 105%;
+        width: 59%;
+        height: 200%;
+        rotate: 80deg;
+      }
+
+      .network-decoration {
+        position: absolute;
+        // pointer-events: auto;
+      }
+
+      .network-decoration__lines line {
+        stroke: url(#network-gradient);
+        stroke-width: 4;
+        fill: none;
+        opacity: 0.5;
+      }
+
+      .network-decoration__nodes circle {
+        fill: $light-grey;
+        stroke: url(#network-gradient);
+        stroke-width: 5;
+
+      }
+    }
+  }
+}
+
+// * {
+//   outline: 1px solid red;
+// }
