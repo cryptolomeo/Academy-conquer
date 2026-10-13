@@ -51,7 +51,6 @@
 
     &__container {
       align-items: start;
-
       overflow: clip;
     }
 
@@ -70,6 +69,7 @@
     &__cta{
       position: relative;
       text-align: start;
+      align-items: start;
       max-width: 55%;
 
       .network {
